@@ -71,6 +71,45 @@ body {
   text-decoration: underline;
 }
 
+#cvPage section {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.edu-entry {
+  margin-bottom: 14px; /* small gap between entries */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.school,
+.degree {
+  display: flex;
+  justify-content: space-between; /* put name on left, location/year on right */
+  align-items: baseline;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.school-name,
+.school-location {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.degree p {
+  margin: 2px 0;
+}
+
+.degree .year {
+  color: #555;
+  font-style: italic;
+}
+
+.edu-entry p {
+  margin: 3px 0;
+  line-height: 1.4;
+}
+
 /* On mobile, make vertical and remove dots */
 @media (min-width: 600px) {
   .social {
