@@ -121,3 +121,83 @@ body {
     justify-content: space-evenly;
   }
 }
+
+#awards-honors h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.awards-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.award-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #eee; /* optional separator */
+  padding: 6px 0;
+  gap: 16px; /* spacing between name and year */
+}
+
+.award-name {
+  flex: 1;
+  max-width: 80%; /* prevents overlap */
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.award-year {
+  white-space: nowrap;
+  font-weight: 400;
+  color: #555;
+  font-style: italic;
+}
+
+/* ===== Research Experience ===== */
+#research-exp h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.research-entry {
+  padding: 6px 0;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Left title — right year */
+.research-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.research-header h3 {
+  margin: 0;
+  flex: 1;
+  max-width: 80%;
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.research-year {
+  white-space: nowrap;
+  font-weight: 400;
+  color: #555;
+  font-style: italic;
+}
+
+.research-entry p,
+.research-entry ul {
+  margin: 6px 0;
+  line-height: 1.35;
+}
+
+.research-entry ul {
+  padding-left: 20px;
+}
