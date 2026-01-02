@@ -221,7 +221,7 @@ body {
 
 /* ===== Research section ===== */
 #research {
-  margin: 3rem auto;
+  margin: 1rem auto;
 }
 
 /* Each research item */
@@ -317,4 +317,31 @@ nav div div {
   nav div div {
     flex-direction: row; /* row on desktop */
   }
+}
+
+#about h2,
+#education h2,
+#publications h2,
+#news h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
+
+  border-bottom: 3px solid #0d6efd;
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#about,
+#education,
+#publications,
+#news {
+  margin: 1rem auto;
+}
+
+main {
+  margin-left: 2%;
+  margin-right: 2%;
 }
