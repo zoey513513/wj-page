@@ -1,4 +1,8 @@
 body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #222;
   margin: 0;
   padding: 0;
 }
@@ -213,4 +217,63 @@ body {
 
 .navbar .nav-link.active {
   border-bottom: 2px solid #0d6efd;
+}
+
+/* ===== Research section ===== */
+#research {
+  margin: 3rem auto;
+}
+
+/* Each research item */
+.research-item {
+  width: 100%; /* 🔑 makes it full width */
+  background-color: #ffffff;
+  padding: 1.75rem 2rem;
+  margin-bottom: 2rem;
+
+  border-radius: 10px;
+
+  /* subtle academic shadow */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Text readability */
+.research-item h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.research-item p {
+  line-height: 1.65;
+  margin-bottom: 0;
+  color: #444;
+}
+
+/* Hover effect */
+.research-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+#research h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
+
+  border-bottom: 3px solid #0d6efd;
+  display: inline-block;
+}
+
+/* Research title row — soft fade into content */
+.research-item h3 {
+  margin: -1.75rem -2rem 1.25rem -2rem;
+  padding: 0.9rem 2rem;
+
+  background: linear-gradient(to bottom, #edf6ff 0%, #edf6ff 70%, #ffffff 100%);
+
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1f2d3d;
 }
