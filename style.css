@@ -277,3 +277,44 @@ body {
   font-weight: 600;
   color: #1f2d3d;
 }
+
+@media print {
+  header {
+    display: none;
+  }
+}
+
+/* cover strip */
+.cover-strip {
+  height: 140px;
+  background: url("img/header-bg.jpeg") center / cover no-repeat;
+}
+
+/* make avatar overlap the cover */
+.profile-avatar {
+  margin-top: -160px;
+  border: 6px solid #fff;
+  background: #fff;
+}
+
+/* ===== Mobile first (default) ===== */
+.social-row {
+  flex-direction: column; /* stack on mobile */
+  align-items: center;
+}
+
+nav div div {
+  flex-direction: column; /* stack nav on mobile */
+  align-items: center;
+}
+
+/* ===== Desktop ===== */
+@media (min-width: 768px) {
+  .social-row {
+    flex-direction: row; /* row on desktop */
+  }
+
+  nav div div {
+    flex-direction: row; /* row on desktop */
+  }
+}
